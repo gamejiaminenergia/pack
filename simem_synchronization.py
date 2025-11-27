@@ -178,9 +178,4 @@ async def main():
     logger.info("🏁 Sincronización SIMEM completada")
 
 if __name__ == "__main__":
-
-    # print(config.date_min)
-    # print(config.date_max)
-    # print(config.dataset_ids)
-
     asyncio.run(main())
