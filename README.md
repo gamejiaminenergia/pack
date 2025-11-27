@@ -36,6 +36,8 @@ Ver [doc/solucion_requerimiento.md](doc/solucion_requerimiento.md) para el anál
 - **Persistencia incremental**: Guarda datos inmediatamente para evitar pérdida en interrupciones
 - **Validación automática**: Verifica integridad de archivos JSON descargados
 - **Consolidación**: Genera archivos CSV consolidados por dataset
+- **Documentación automática**: Extrae metadata y estructura de columnas de cada dataset
+- **Diccionario de datos**: Genera documentación completa en formato Markdown
 - **Configuración flexible**: Rango de fechas y datasets configurables
 - **Logging completo**: Registro detallado de operaciones y errores
 
@@ -46,13 +48,18 @@ pack/
 ├── config.py                    # Configuración (fechas, datasets)
 ├── dataset_ids.json            # IDs de datasets SIMEM
 ├── simem_synchronization.py    # Extractor asíncrono principal
+├── simem_documentacion.py      # Extractor de metadata y columnas
+├── crear_diccionario.py        # Generador de diccionario Markdown
 ├── simem_check.py              # Validador de archivos JSON
 ├── read_data.py                # Consolidador de datos a CSV
+├── diccionario.md              # Diccionario de datos generado
 ├── requirements.txt            # Dependencias Python
 ├── data/
-│   └── simem/
-│       └── {dataset_id}/       # Datos JSON por dataset y fecha
-│           └── YYYY-MM-DD.json
+│   ├── simem/
+│   │   └── {dataset_id}/       # Datos JSON por dataset y fecha
+│   │       └── YYYY-MM-DD.json
+│   └── simem_documentation/    # Metadata y columnas por dataset
+│       └── {dataset_id}.json
 ├── tmp/
 │   └── {dataset_id}.csv        # Archivos CSV consolidados
 └── doc/
@@ -143,6 +150,89 @@ python read_data.py
 
 Genera archivos CSV consolidados en `tmp/{dataset_id}.csv` combinando todos los archivos JSON de cada dataset.
 
+### 5. Extraer Documentación de Datasets
+
+```bash
+python simem_documentacion.py
+```
+
+**Características:**
+- Extrae `metadata` y `columns` de cada dataset desde la API de SIMEM
+- Busca la primera metadata no vacía en el rango de fechas configurado
+- Guarda documentación en `data/simem_documentation/{dataset_id}.json`
+- Omite datasets ya documentados (reanudable)
+- Muestra progreso en tiempo real
+
+**Ejemplo de salida:**
+```
+📊 Iniciando extracción de documentación...
+   Datasets a procesar: 32
+   Rango de fechas: 2025-10-01 a 2025-10-31
+   Conexiones simultáneas: 5
+Procesando datasets: 100%|████████| 32/32 [01:54<00:00, 3.57s/dataset]
+✅ Extracción de documentación completada!
+```
+
+**Estructura del JSON generado:**
+```json
+{
+  "metadata": {
+    "description": "Descripción del dataset",
+    "entity": "XM",
+    "category": "Categoría del dataset",
+    "periodicity": "Diaria",
+    "granularity": "Horaria",
+    "creationDate": "2023-09-28 22:45:20",
+    "lastUpdate": "2025-11-27 10:31:45",
+    "nextUpdateDate": "2025-11-28 10:00:00",
+    "historicData": "URL de datos históricos",
+    "ultimaNovedad": {
+      "titulo": "Título de la novedad",
+      "descripcion": "Descripción",
+      "fechaPublicacion": "2024-03-12",
+      "urlNovedad": "URL"
+    }
+  },
+  "columns": [
+    {
+      "nameColumn": "NombreColumna",
+      "dataType": "tipo",
+      "description": "Descripción de la columna"
+    }
+  ],
+  "date": "2025-10-01"
+}
+```
+
+### 6. Generar Diccionario de Datos
+
+```bash
+python crear_diccionario.py
+```
+
+**Características:**
+- Genera un diccionario completo en formato Markdown (`diccionario.md`)
+- Incluye índice navegable con links internos
+- Documenta metadata, columnas y novedades de cada dataset
+- Formato profesional con tablas y emojis
+
+**Contenido del diccionario:**
+- 📚 Encabezado con total de datasets y fecha de generación
+- 📑 Índice navegable con categorías
+- 📊 Información general de cada dataset
+- 📢 Últimas novedades (cuando existen)
+- 📋 Tablas de columnas con tipos y descripciones
+
+**Ejemplo de salida:**
+```
+🚀 Iniciando generación del diccionario...
+📊 Total de datasets cargados: 32
+📝 Generando contenido Markdown...
+✅ Diccionario creado exitosamente: diccionario.md
+📄 Tamaño del archivo: 43695 caracteres
+🏁 Proceso completado!
+```
+
 ## 🔑 Datasets Incluidos
 
 El proyecto extrae **32 datasets** identificados en el análisis de viabilidad:
@@ -216,6 +306,7 @@ Cada CSV contiene todos los registros del dataset para el rango de fechas config
 ## 📝 Logs
 
 - `simem_sync.log`: Log de sincronización de datos
+- `simem_doc.log`: Log de extracción de documentación
 - `db_sync.log`: Log de consolidación a CSV
 
 ## ⚙️ Configuración Avanzada
@@ -258,6 +349,33 @@ python simem_check.py
 # Simplemente volver a ejecutar, omitirá archivos existentes
 python simem_synchronization.py
 ```
+
+## 🔄 Flujo de Trabajo Recomendado
+
+Para obtener datos completos y documentación, seguir este orden:
+
+```bash
+# 1. Extraer datos históricos (records)
+python simem_synchronization.py
+
+# 2. Validar integridad de los datos
+python simem_check.py
+
+# 3. Consolidar datos a CSV
+python read_data.py
+
+# 4. Extraer documentación (metadata y columnas)
+python simem_documentacion.py
+
+# 5. Generar diccionario de datos
+python crear_diccionario.py
+```
+
+**Resultado final:**
+- ✅ Datos históricos en `data/simem/{dataset_id}/`
+- ✅ CSVs consolidados en `tmp/`
+- ✅ Documentación técnica en `data/simem_documentation/`
+- ✅ Diccionario completo en `diccionario.md`
 
 ## 📄 Licencia
 

@@ -1,0 +1,137 @@
+2025-11-27 16:50:59,777 - INFO - 🚀 Iniciando extracción de documentación SIMEM
+2025-11-27 16:50:59,777 - INFO - 📊 Iniciando extracción de documentación...
+2025-11-27 16:50:59,777 - INFO -    Datasets a procesar: 32
+2025-11-27 16:50:59,777 - INFO -    Rango de fechas: 2025-10-01 a 2025-10-31
+2025-11-27 16:50:59,777 - INFO -    Conexiones simultáneas: 5
+2025-11-27 16:50:59,777 - INFO - ------------------------------------------------------------
+2025-11-27 16:50:59,782 - INFO - 
+🔍 Buscando documentación para: EC6945
+2025-11-27 16:51:05,743 - INFO - ✅ 2025-10-01 | EC6945 | Metadata encontrada
+2025-11-27 16:51:05,743 - INFO - 💾 Documentación guardada: EC6945
+2025-11-27 16:51:05,743 - INFO - 
+🔍 Buscando documentación para: E055B4
+2025-11-27 16:51:07,929 - INFO - ✅ 2025-10-01 | E055B4 | Metadata encontrada
+2025-11-27 16:51:07,930 - INFO - 💾 Documentación guardada: E055B4
+2025-11-27 16:51:07,930 - INFO - 
+🔍 Buscando documentación para: 18F0B8
+2025-11-27 16:51:11,951 - INFO - ✅ 2025-10-01 | 18F0B8 | Metadata encontrada
+2025-11-27 16:51:11,952 - INFO - 💾 Documentación guardada: 18F0B8
+2025-11-27 16:51:11,952 - INFO - 
+🔍 Buscando documentación para: ff027b
+2025-11-27 16:51:14,810 - INFO - ✅ 2025-10-01 | ff027b | Metadata encontrada
+2025-11-27 16:51:14,811 - INFO - 💾 Documentación guardada: ff027b
+2025-11-27 16:51:14,811 - INFO - 
+🔍 Buscando documentación para: ea1c85
+2025-11-27 16:51:19,232 - INFO - ✅ 2025-10-01 | ea1c85 | Metadata encontrada
+2025-11-27 16:51:19,233 - INFO - 💾 Documentación guardada: ea1c85
+2025-11-27 16:51:19,233 - INFO - 
+🔍 Buscando documentación para: 520A3F
+2025-11-27 16:51:21,470 - INFO - ✅ 2025-10-01 | 520A3F | Metadata encontrada
+2025-11-27 16:51:21,471 - INFO - 💾 Documentación guardada: 520A3F
+2025-11-27 16:51:21,471 - INFO - 
+🔍 Buscando documentación para: 7BC5F5
+2025-11-27 16:51:24,430 - INFO - ✅ 2025-10-01 | 7BC5F5 | Metadata encontrada
+2025-11-27 16:51:24,430 - INFO - 💾 Documentación guardada: 7BC5F5
+2025-11-27 16:51:24,430 - INFO - 
+🔍 Buscando documentación para: 306c67
+2025-11-27 16:51:25,922 - INFO - ✅ 2025-10-01 | 306c67 | Metadata encontrada
+2025-11-27 16:51:25,922 - INFO - 💾 Documentación guardada: 306c67
+2025-11-27 16:51:25,922 - INFO - 
+🔍 Buscando documentación para: 135c10
+2025-11-27 16:51:27,292 - INFO - ✅ 2025-10-01 | 135c10 | Metadata encontrada
+2025-11-27 16:51:27,294 - INFO - 💾 Documentación guardada: 135c10
+2025-11-27 16:51:27,294 - INFO - 
+🔍 Buscando documentación para: b38efc
+2025-11-27 16:51:29,203 - INFO - ✅ 2025-10-01 | b38efc | Metadata encontrada
+2025-11-27 16:51:29,204 - INFO - 💾 Documentación guardada: b38efc
+2025-11-27 16:51:29,204 - INFO - 
+🔍 Buscando documentación para: BE51B1
+2025-11-27 16:51:31,484 - INFO - ✅ 2025-10-01 | BE51B1 | Metadata encontrada
+2025-11-27 16:51:31,485 - INFO - 💾 Documentación guardada: BE51B1
+2025-11-27 16:51:31,485 - INFO - 
+🔍 Buscando documentación para: E17D25
+2025-11-27 16:51:32,594 - INFO - ✅ 2025-10-01 | E17D25 | Metadata encontrada
+2025-11-27 16:51:32,595 - INFO - 💾 Documentación guardada: E17D25
+2025-11-27 16:51:32,595 - INFO - 
+🔍 Buscando documentación para: 055A4D
+2025-11-27 16:51:34,616 - INFO - ✅ 2025-10-01 | 055A4D | Metadata encontrada
+2025-11-27 16:51:34,622 - INFO - 💾 Documentación guardada: 055A4D
+2025-11-27 16:51:34,622 - INFO - 
+🔍 Buscando documentación para: 9E77E5
+2025-11-27 16:51:39,093 - INFO - ✅ 2025-10-01 | 9E77E5 | Metadata encontrada
+2025-11-27 16:51:39,096 - INFO - 💾 Documentación guardada: 9E77E5
+2025-11-27 16:51:39,096 - INFO - 
+🔍 Buscando documentación para: 7F18B1
+2025-11-27 16:51:43,586 - INFO - ✅ 2025-10-01 | 7F18B1 | Metadata encontrada
+2025-11-27 16:51:43,586 - INFO - 💾 Documentación guardada: 7F18B1
+2025-11-27 16:51:43,586 - INFO - 
+🔍 Buscando documentación para: 670221
+2025-11-27 16:51:47,074 - INFO - ✅ 2025-10-01 | 670221 | Metadata encontrada
+2025-11-27 16:51:47,074 - INFO - 💾 Documentación guardada: 670221
+2025-11-27 16:51:47,075 - INFO - 
+🔍 Buscando documentación para: 0bfc9d
+2025-11-27 16:51:47,668 - INFO - ✅ 2025-10-01 | 0bfc9d | Metadata encontrada
+2025-11-27 16:51:47,668 - INFO - 💾 Documentación guardada: 0bfc9d
+2025-11-27 16:51:47,668 - INFO - 
+🔍 Buscando documentación para: 03e35f
+2025-11-27 16:51:52,119 - INFO - ✅ 2025-10-01 | 03e35f | Metadata encontrada
+2025-11-27 16:51:52,119 - INFO - 💾 Documentación guardada: 03e35f
+2025-11-27 16:51:52,119 - INFO - 
+🔍 Buscando documentación para: 12c7fd
+2025-11-27 16:51:55,771 - INFO - ✅ 2025-10-01 | 12c7fd | Metadata encontrada
+2025-11-27 16:51:55,771 - INFO - 💾 Documentación guardada: 12c7fd
+2025-11-27 16:51:55,771 - INFO - 
+🔍 Buscando documentación para: 00C31F
+2025-11-27 16:51:57,301 - INFO - ✅ 2025-10-01 | 00C31F | Metadata encontrada
+2025-11-27 16:51:57,302 - INFO - 💾 Documentación guardada: 00C31F
+2025-11-27 16:51:57,302 - INFO - 
+🔍 Buscando documentación para: cf0167
+2025-11-27 16:51:59,214 - INFO - ✅ 2025-10-01 | cf0167 | Metadata encontrada
+2025-11-27 16:51:59,214 - INFO - 💾 Documentación guardada: cf0167
+2025-11-27 16:51:59,214 - INFO - 
+🔍 Buscando documentación para: 64eb3f
+2025-11-27 16:52:25,313 - INFO - ✅ 2025-10-01 | 64eb3f | Metadata encontrada
+2025-11-27 16:52:25,314 - INFO - 💾 Documentación guardada: 64eb3f
+2025-11-27 16:52:25,314 - INFO - 
+🔍 Buscando documentación para: F28855
+2025-11-27 16:52:27,900 - INFO - ✅ 2025-10-01 | F28855 | Metadata encontrada
+2025-11-27 16:52:27,901 - INFO - 💾 Documentación guardada: F28855
+2025-11-27 16:52:27,901 - INFO - 
+🔍 Buscando documentación para: 7a07ac
+2025-11-27 16:52:38,800 - INFO - ✅ 2025-10-01 | 7a07ac | Metadata encontrada
+2025-11-27 16:52:38,801 - INFO - 💾 Documentación guardada: 7a07ac
+2025-11-27 16:52:38,801 - INFO - 
+🔍 Buscando documentación para: F3A9B1
+2025-11-27 16:52:41,328 - INFO - ✅ 2025-10-01 | F3A9B1 | Metadata encontrada
+2025-11-27 16:52:41,328 - INFO - 💾 Documentación guardada: F3A9B1
+2025-11-27 16:52:41,328 - INFO - 
+🔍 Buscando documentación para: e427a2
+2025-11-27 16:52:43,187 - INFO - ✅ 2025-10-01 | e427a2 | Metadata encontrada
+2025-11-27 16:52:43,188 - INFO - 💾 Documentación guardada: e427a2
+2025-11-27 16:52:43,188 - INFO - 
+🔍 Buscando documentación para: 909809
+2025-11-27 16:52:43,893 - INFO - ✅ 2025-10-01 | 909809 | Metadata encontrada
+2025-11-27 16:52:43,895 - INFO - 💾 Documentación guardada: 909809
+2025-11-27 16:52:43,895 - INFO - 
+🔍 Buscando documentación para: 379022
+2025-11-27 16:52:45,943 - INFO - ✅ 2025-10-01 | 379022 | Metadata encontrada
+2025-11-27 16:52:45,943 - INFO - 💾 Documentación guardada: 379022
+2025-11-27 16:52:45,943 - INFO - 
+🔍 Buscando documentación para: 1237df
+2025-11-27 16:52:47,667 - INFO - ✅ 2025-10-01 | 1237df | Metadata encontrada
+2025-11-27 16:52:47,667 - INFO - 💾 Documentación guardada: 1237df
+2025-11-27 16:52:47,667 - INFO - 
+🔍 Buscando documentación para: fa4671
+2025-11-27 16:52:49,869 - INFO - ✅ 2025-10-01 | fa4671 | Metadata encontrada
+2025-11-27 16:52:49,870 - INFO - 💾 Documentación guardada: fa4671
+2025-11-27 16:52:49,870 - INFO - 
+🔍 Buscando documentación para: ab3d66
+2025-11-27 16:52:52,395 - INFO - ✅ 2025-10-01 | ab3d66 | Metadata encontrada
+2025-11-27 16:52:52,395 - INFO - 💾 Documentación guardada: ab3d66
+2025-11-27 16:52:52,395 - INFO - 
+🔍 Buscando documentación para: 8DECCA
+2025-11-27 16:52:53,891 - INFO - ✅ 2025-10-01 | 8DECCA | Metadata encontrada
+2025-11-27 16:52:53,891 - INFO - 💾 Documentación guardada: 8DECCA
+2025-11-27 16:52:53,892 - INFO - 
+✅ Extracción de documentación completada!
+2025-11-27 16:52:53,892 - INFO - 🏁 Extracción de documentación SIMEM completada
